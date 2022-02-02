@@ -1,0 +1,13 @@
+<p>login works!</p>
+<div class="row">
+<form  [formGroup]="loginRef" (ngSubmit)="checkUser()"  class="formGroup col-4">
+  UserName : <input type="text" formControlName="username"  class="form-control"> <br/>
+  Password : <input type="password" formControlName="password"  class="form-control"> <br/>
+  <input type="submit" value="Login" class="btn btn-primary">
+  <input type="reset" value="clear" class="btn btn-info">
+</form>
+
+</div>
+
+<br/>
+<h2>{{msg}}</h2>
